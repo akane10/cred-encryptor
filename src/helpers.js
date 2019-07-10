@@ -17,5 +17,6 @@ function editFile(path, fn) {
 
 module.exports = {
   addJson,
-  editFile
+  editFile,
+  toJson
 };

@@ -16,24 +16,6 @@
   },
   {
     "title": {
-      "iv": "5ce69cc9644181fe8b501ba4deac7f58",
-      "encryptedData": "cd4ec254f97f4dba4999a52d7b80e5df"
-    },
-    "username": {
-      "iv": "5ce69cc9644181fe8b501ba4deac7f58",
-      "encryptedData": "4081182ccf015796de0a04fef7b25d3e"
-    },
-    "email": {
-      "iv": "5ce69cc9644181fe8b501ba4deac7f58",
-      "encryptedData": "a598bbf7b2f17737915d3d1830f28b98"
-    },
-    "password": {
-      "iv": "5ce69cc9644181fe8b501ba4deac7f58",
-      "encryptedData": "a598bbf7b2f17737915d3d1830f28b98"
-    }
-  },
-  {
-    "title": {
       "iv": "37c3c2fb8c0d371c89b7453b07bf0170",
       "encryptedData": "51e782f9f5239599e1a89e1c81bad4f9"
     },
