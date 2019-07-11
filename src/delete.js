@@ -1,27 +1,22 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { toJson } = require('./helpers');
+const { toJson, read } = require('./helpers');
 const { decrypt } = require('../util');
 const { pathData } = require('../config/config');
-
-function read() {
-  const data1 = fs.readFileSync(pathData, 'utf-8');
-  const data = JSON.parse(data1);
-  return data;
-}
 
 const QUESTIONS = [
   {
     name: 'number',
     type: 'list',
     message: 'What do you wnat to delete?',
-    choices: read().map((i, index) => index)
+    choices: read(pathData).map((i, index) => index)
   }
 ];
 
 async function deleteData() {
   try {
-    const data = read();
+    const data = read(pathData);
+
     const dec = (i, index) => {
       console.log('no:', index);
       console.log('title:', decrypt(i.title));
