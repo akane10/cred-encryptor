@@ -21,7 +21,12 @@ const QUESTIONS = [
   {
     name: 'email',
     type: 'input',
-    message: 'Email:'
+    message: 'Email:',
+    validate: function(input) {
+      const regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      if (regEx.test(input)) return true;
+      return 'not sure if it is a valid email format';
+    }
   },
   {
     name: 'password',
