@@ -26,7 +26,7 @@ function editFile(path, fn) {
     const newData = fn(data);
     fs.writeFileSync(path, newData, 'utf-8');
   } catch (e) {
-    const newData = fn(data);
+    const newData = fn('[]');
     fs.writeFileSync(pathData, newData, 'utf8');
   }
 }
