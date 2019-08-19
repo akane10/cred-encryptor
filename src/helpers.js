@@ -8,7 +8,8 @@ function read(pathData) {
     const data = JSON.parse(data1);
     return data;
   } catch (e) {
-    console.log('whoaaa', e.message);
+    fs.writeFileSync(pathData, '[]', 'utf8');
+    return [];
   }
 }
 
@@ -25,7 +26,8 @@ function editFile(path, fn) {
     const newData = fn(data);
     fs.writeFileSync(path, newData, 'utf-8');
   } catch (e) {
-    console.log('whoaaa', e.message);
+    const newData = fn(data);
+    fs.writeFileSync(pathData, newData, 'utf8');
   }
 }
 
