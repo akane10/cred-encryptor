@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const add = require('./src/add');
 const show = require('./src/show');
 const deleteData = require('./src/delete');
