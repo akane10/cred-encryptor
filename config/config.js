@@ -2,9 +2,9 @@ const dotenv = require('dotenv');
 const crypto = require('crypto');
 dotenv.config();
 
-const algorithm = process.env.ALGORITHM;
+const algorithm = 'aes-256-cbc';
 const key = crypto
-  .createHash(process.env.HASH)
+  .createHash('sha256')
   .update(String(process.env.SALT))
   .digest('base64')
   .substr(0, 32);

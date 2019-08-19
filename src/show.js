@@ -6,6 +6,8 @@ const { pathData } = require('../config/config');
 function show() {
   const data = read(pathData);
 
+  if (data.length === 0) return console.log('nothing to show');
+
   const dec = (i, index) => {
     console.log('no:', index);
     console.log('title:', decrypt(i.title));
