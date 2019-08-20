@@ -6,7 +6,7 @@ A cli too that I used to remember my credentials such as what email I use to log
 
 I build this to help me remember my credentials, like, "what was email i use to login on twitter" or "what's my twitter password?". I've got a lot of account, gmail, linkedin, twitter, heroku, github, etc. It is impossible to remember all of them, because sometimes I use different password. I used to save it in plain text, but I also don't want someone else to see it, I could however put the file in deep path folder but then I forgot where the file I put in.
 
-So with this, I just can run some commands and they just pop up. This is not the most secure tool on earth, in fact this is very simple tool that I build just to help me.
+So with this, I just can run some commands and voilà!. This is not the most secure tool on earth, in fact this is very simple tool that I build just to help me. Use at your own risk and **never** save very important credential (neither do I, to be honest)
 
 ### Installation
 
